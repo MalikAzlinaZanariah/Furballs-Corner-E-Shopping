@@ -1,0 +1,894 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.sidebar{
+    width: 345px;
+    position: fixed;
+    height: 100%;
+    background-color: royalblue;
+    z-index: 100%;
+    left: 0;
+    
+    transition:width 300ms;
+
+}
+.sidebar-label{
+    height: 90px;
+    padding:1rem 0rem 1rem 1rem ;
+    color:white;
+    text-align: left;
+
+}
+
+.sidebar-label span{
+    display:inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu li{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.sidebar-menu a{
+    display: block;
+    color: white;
+    font-size: 1rem;
+    padding-left: 1rem;
+   
+}
+
+.sidebar-menu a.active{
+    background: #fff;
+    padding-right:1rem ;
+    padding-bottom: 1rem;
+    color:black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.sidebar-menu a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+
+}
+
+#nav-toggle:checked + .sidebar{
+    width: 70px;
+}
+#nav-toggle:checked + .sidebar .sidebar-label h2,
+#nav-toggle:checked + .sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+}
+#nav-toggle:checked + .sidebar li  a{
+    padding-left: 0rem;
+}
+#nav-toggle:checked + .sidebar li  a span{
+    padding-left: 1rem;
+}
+
+
+
+#nav-toggle:checked + .sidebar .sidebar-label h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child{
+    display: none;
+}
+
+#nav-toggle:checked ~ .main-content{
+    margin-left: 70px;
+}
+
+#nav-toggle:checked ~ .main-content header{
+    width: calc(100%-70px);
+    left: 70px;
+}
+
+
+
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 345px;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid rgb(235, 233, 233);
+    transition: left 300ms;
+}
+#nav-toggle{
+    display: none;
+}
+
+main{
+    margin-top: 90px;
+    padding: 2rem 1.5rem;
+    background:#fff;
+    min-height: calc(100vh-90px);
+}
+
+.dashboard-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2 rem;
+    margin-top:1 rem;
+
+}
+
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background:royalblue;
+    padding: 2rem;
+    border-radius: 2px;
+    margin: 20px;
+    margin-top:-100px;
+    color: white;
+
+}
+
+.card-single span:first-child{
+    color: rgb(255, 255, 255);
+
+}
+.card-single span:first-child{
+    font-size: 3rem;
+}
+.addbuttons{
+    border: 1px 0px 0px 0px solid gray;
+    padding: 1rem;
+}
+
+.addbuttons ul{
+    display: flex;
+    justify-content: center;
+}
+.addbuttons ul li {
+    margin: 10px;
+}
+
+
+.addb{
+    
+       justify-content: center;
+        line-height: 30px;
+        width:200px;
+        border-radius:6px;
+        padding: 0 15px;
+        font-size:12px;
+        background-color: royalblue;
+        color:rgb(255, 255, 255);
+    
+
+}
+
+
+
+nav{
+	padding: 5px;
+	background-color: #e0e0e0;
+    grid-area: nav;
+    height: 30%;
+   
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    display: flex;
+    
+    width: 100px;
+    height: 100px;
+    margin-left:20px ;
+}
+.navigation h1{
+   
+   color: royalblue;
+   margin-top: 35px;
+   margin-left: 5px;
+    
+}
+
+.logo img{
+    height: 100%;
+}
+.lists{
+    display: flex;
+    justify-content: right;
+   
+}
+.lists ul{
+    display: flex;
+
+    
+}
+.lists ul li{
+    margin-top: 40px;
+    margin-right:20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*-----------------MAIN-------------------------*/
+.usercontainer{
+    height: 100%;
+}
+.main-page{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(190, 206, 255);
+    margin-bottom: none;
+    height: 100%;
+}
+.main-page .txt{
+    width:20%;
+    margin-top: 20px;
+    border:2px ;
+    text-align: center;
+    margin-bottom:20%;
+
+}
+.main-page .link-detail{
+    width: 85%;
+    height: 100%;
+    border:2px solid rgb(237, 237, 241);
+   
+    background-color: white;
+    margin-bottom: 20%;
+}
+.account-page .txt .txt-detail{
+    width: 140px;
+    height:160px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+    overflow: none;
+}
+.main-page .txt .txt-detail img{
+    width: 100%;
+    height:140px;
+    border: 1px solid free;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px #888888;
+}
+
+.main-page .txt .txt-detail h2{
+    color: var(--darkStaleGray);
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+
+.main-page .txt ul{
+    list-style: none;
+    padding: 10px;   
+}
+.main-page .txt ul li{
+    margin-bottom: 5px;  
+}
+
+.main-page .txt ul li a{
+    color: var(--darkStaleGray);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 0.5px solid rgba(236,240, 241, 0.3);
+    text-align: left;
+    padding: 5px 8px;
+    display: block;
+    
+    
+}
+.main-page .txt ul li a span{
+    float: right;
+}
+.active{
+    color: var(--az)!important;
+    background-color: royalblue;
+}
+.main-page .link-detail h2{
+    margin-left: 10px;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+
+
+/*------------accountprofileemp------------*/
+.empa{
+    margin-top: -120px;
+}
+
+/*------------change password--------------------*/
+
+.main-page .link-detail h2, p{
+    margin-left: 10px;
+}
+.account-page .link-detail p{
+    margin-top: -10px;
+}
+#label{
+	width:100%;
+
+}
+.label{
+	text-align: center;
+	margin-top:20px;
+	width:80%;
+	color:black;
+	font-size:18px;
+	font-weight:700;
+}
+.newps{
+	position:relative;
+	left:50%;
+	top:-37px;
+	line-height:30px;
+	width:170px;
+	border-radius:6px;
+	padding: 0 15px;
+	font-size:12px;
+}
+.confirmps{
+	position:relative;
+	left:50%;
+	top:-37px;
+	line-height: 30px;
+	width:170px;
+	border-radius:6px;
+	padding: 0 15px;
+	font-size:12px;
+    color:#555;
+}
+.verificode{
+	position:relative;
+	left:50%;
+	top:-37px;
+	line-height: 30px;
+	width:170px;
+	border-radius:6px;
+	padding: 0 15px;
+	font-size:12px;
+    color:#555;
+}
+.code{
+	position:relative;
+	left:50%;
+	top:-37px;
+	line-height: 30px;
+	width:100px;
+	border-radius:6px;
+	padding: 0 15px;
+    font-size:12px;
+    background-color: royalblue;
+    color:rgb(255, 255, 255);
+}
+
+
+.changebutton{
+    position:relative;
+    left: 85%;
+    top:-37px;
+	line-height: 30px;
+	width:100px;
+	border-radius:6px;
+	padding: 0 15px;
+    font-size:12px;
+    background-color: royalblue;
+    color:rgb(255, 255, 255);
+}
+
+/*--------PROCESS DELIVERY/COMPLETE DELIVERY --------------------------*/
+.content-table th{
+    background-color:royalblue;
+    text-align:center;
+    padding:20px 15px;
+    color: #fff;
+}
+.content-table	td{
+padding: 12px 15px
+}
+.content-table{
+border-collapse:collapse;
+margin:25px 10px;
+font-size:0.9em;
+min-width:400px;
+border-radius: 5px 5px 0 0;
+overflow:hidden;
+box-shadow:0 0 20px rgba(0,0,0,0.15);
+justify-content: center;
+margin-top: -100px;
+margin-left: 130px;
+
+}
+
+
+.showing p{
+    position: relative;
+    margin-left: 350px;
+}
+.button{
+    margin-left: 700px;
+    margin-top:-20px;
+}
+
+
+/*--------START OF INPUT DATA--------------------------*/
+.input-wrapper{
+    margin-top: 10px;
+    position: absolute;
+    top: 176px;
+    width: 70% ;
+    margin-left: 50px;
+}
+.input-wrapper .input{
+    margin-bottom: 15px;
+}
+.input-wrapper #pPrice[type="number"]{
+    padding: 7px;
+    width: 100px;
+    height: 20px;
+}
+.input-wrapper #stock[type="number"]{
+    padding: 7px;
+    width: 100px;
+    height: 20px;
+}
+.input-wrapper .input:last-child{
+    margin-bottom: 0;
+}
+.input-wrapper .input label{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+
+}
+.input-wrapper #pID{
+    width: 17%;
+    display: inline-block;
+    margin-right: 15px;
+    height: 20px;
+}
+.input-wrapper #cID{
+    width: 13%;
+    height: 20px;
+}
+.input-wrapper #pName{
+    width: 25%;
+    height: 20px;
+}
+.input-wrapper #pDetails{
+    width: 38%;
+    display: inline-block;
+    margin-right: 15px;
+    height: 20px;
+}
+.input-wrapper .button{
+    padding: 5px 23px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 3px;
+}
+.input-wrapper #pPrice{
+    width: 18%;
+    display: inline-block;
+    margin-right: 15px;
+}
+.input-wrapper #stock{
+    width: 15%;
+}
+.input-wrapper .same-line{
+    display: flex;
+    justify-content: space-between;
+}
+.input-wrapper input[type="text"]{
+    border-radius: 1px;
+    border: 1px solid #9597a6;
+    padding: 7px;
+    outline: none;
+}
+.input-wrapper input[type="text"]:focus{
+    border-color: black;
+}
+/*--------END OF INPUT DATA--------------------------*/
+
+/*--------START OF TABLE DATA--------------------------*/
+.table-wrapper{
+    width: 785px;
+    background: #fff;
+    padding: 10px 10px 5px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 57%;
+    left: 26%;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+table.table tr td {
+    padding: 16px 28px;
+    vertical-align: middle;
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+.table-title{
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    background: royalblue;
+    margin: -11px -11px 15px;
+    padding: 15px 29px;
+    color: #fff;
+}
+.row .header{
+    display: inline-block;
+    margin-right: 15px;
+}
+.row .header1{
+    display: inline-block;
+    margin-right: 2px;
+}
+.row .header2{
+    display: inline-block;
+    margin-right: 10px;
+}
+.row .header3{
+    display: inline-block;
+    margin-right: 47px;
+}
+.row .header4{
+    display: inline-block;
+    margin-right: 133px;
+}
+.row .header5{
+    display: inline-block;
+    margin-right: 23px;
+}
+.row .header6{
+    display: inline-block;
+}
+/*--------END OF  TABLE DATA--------------------------*/
+
+/*--------START OF ENTRIES LINE-------------------------*/
+.entries{
+    position: absolute;
+    top: 108%;
+    left: -1px;
+}
+/*--------END OF THE ENTRIES LINE-------------------------*/
+
+/*------------------------START OF PAGINATION---------------------------*/
+.page-container{
+    background: #fff;
+    padding: 0px 0px;
+    box-shadow: 0px 0.5vh 5px 0px rgba(0,0,0,0.25);
+    width: 23.6%;
+    position: absolute;
+    top: 105%;
+    right: 0%;
+}
+.pagination{
+    margin: 0px 0 0px 0;
+}
+.pagination, .pagination li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pagination li{
+    background: #fff;
+    list-style: none;
+}
+.pagination li a{
+    text-decoration: none;
+    color: darkslategrey;
+    height: 35px;
+    width: 33px;
+    padding-top: 4px;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-right-width: 0px;
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.35);
+}
+.pagination li a:hover{
+    background: royalblue;
+    color: white;
+    border-top-color: rgba(0,0,0,0.35);
+    border-bottom-color: rgba(0,0,0,0.5);  
+}
+.pagination li a:focus, .pagination li a:active{
+  padding-top: 4px;
+  border-left-width:1px;
+  background: royalblue;
+  box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,.25);
+}
+.pagination li:last-child a{
+    border-right-width: 1px;
+}
+.pagination li.start-end a{
+    min-width: 76px;
+  }
+/*------------------------END OF PAGINATION---------------------------*/
+
+/*-----------------------START OF BUTTON GROUP---------------------------*/
+.button-wrapper{
+    width: 11px;
+    position: absolute;
+    top: 4px;
+    
+    margin-left: 100px;
+}
+.button-wrapper .button1{
+    margin-bottom: 15px;
+}
+.button-wrapper .button{
+    padding: 11px 32px;
+    width: 104px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 3px;
+}
+.button a{
+    color: white;
+}
+/*----------------------END OF BUTTON GROUP---------------------------*/
+
+/*----------------------CATEGORY MASTER TABLE DATA---------------------------*/
+.CMtable-wrapper{
+    width: 40%;
+    background: #fff;
+    padding: 10px 10px 5px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    
+}
+.CMtable-title{
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    background: royalblue;
+    margin: -11px -11px 15px;
+    padding: 15px 29px;
+    color: #fff;
+}
+.CMrow .CMheader{
+    display: inline-block;
+    margin-right: 14px;
+}
+.CMrow .CMheader1{
+    display: inline-block;
+    margin-right: 6px;
+}
+.CMrow .CMheader2{
+    display: inline-block;
+}
+
+.button-wrapper1{
+    width: 11px;
+    position: absolute;
+    top: 4px;
+    
+    margin-left: -300px;
+}
+.button-wrapper1 .button2{
+    margin-bottom: 15px;
+}
+
+
+/*----------------------END OF CATEGORY MASTER TABLE DATA---------------------------*/
+
+
+
+/*----------table accounts------------*/
+
+.Atable-wrapper{
+    width: 70%;
+    background: #fff;
+    padding: 10px 10px 5px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 25%;
+    left: 26%;
+    margin-left: 20px;
+}
+.Atable-title{
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    background: royalblue;
+    margin: -11px -11px 15px;
+    padding: 15px 29px;
+    color: #fff;
+}
+.Arow .Aheader{
+    display: inline-block;
+    margin-right: 14px;
+}
+.Arow .Aheader1{
+    display: inline-block;
+    margin-right: 50px;
+}
+.Arow .Aheader2{
+    display: inline-block;
+    margin-right: 100px;
+}
+.Arow .Aheader3{
+    display: inline-block;
+    margin-right: 200px;
+}
+.Arow .Aheader4{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.Arow .Aheader6{
+    display: inline-block;
+    margin-right:50px;
+}
+.Arow .Aheader7{
+    display: inline-block;
+    margin-right: 0px;
+}
+.edi{
+    color: royalblue;
+}
+.del{
+    color: red;
+    
+}
+/*-----------Table Process and Completed Admin----------------*/
+/*----------table accounts------------*/
+
+.Adtable-wrapper{
+    width: 70%;
+    background: #fff;
+    padding: 10px 10px 5px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 25%;
+    left: 26%;
+    margin-left: 20px;
+}
+.Adtable-title{
+    border-bottom: 1px solid #e9e9e9;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    background: royalblue;
+    margin: -11px -11px 15px;
+    padding: 15px 29px;
+    color: #fff;
+}
+.Adrow .Adheader{
+    display: inline-block;
+    margin-right: 14px;
+}
+.Adrow .Adheader1{
+    display: inline-block;
+    margin-right: 50px;
+}
+.Adrow .Adheader2{
+    display: inline-block;
+    margin-right: 80px;
+}
+.Adrow .Adheader3{
+    display: inline-block;
+    margin-right: 150px;
+}
+.Adrow .Adheader4{
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.Adrow .Adheader6{
+    display: inline-block;
+    margin-right:50px;
+}
+.Adrow .Adheader7{
+    display: inline-block;
+    margin-right: 0px;
+}
+.view{
+    font-size: 12px;
+    color: royalblue;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+@media only screen and (max-width:1200px){
+    .sidebar{
+        width: 70px;
+    }
+    .sidebar .sidebar-label,
+    .sidebar li {
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .sidebar li  a{
+        padding-left: 0rem;
+    }
+    .sidebar li  a span{
+        padding-left: 1rem;
+    }
+    
+    
+    
+    .sidebar .sidebar-label h2 span:last-child,
+    .sidebar li a span:last-child{
+        display: none;
+    }
+    
+    .main-content{
+        margin-left: 70px;
+    }
+    
+    .main-content header{
+        width: calc(100%-70px);
+        left: 70px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .dashboard-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .dashboard-cards{
+        grid-template-columns:(3,1fr)
+        
+    }
+    
+    
+    
+}
+@media only screen and (max-width: 768px){
+    .dashboard-cards{
+   
+        grid-template-columns:(3,1fr)
+       
+        
+        
+    }
+    main{
+        grid-template-columns: 100%;
+        
+    }
+    
+}
+

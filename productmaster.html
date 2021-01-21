@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta character="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link type="text/css" rel="stylesheet" href="css/adminstyle.css">
+		<title>
+				Furballs Corner Admin
+		</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        
+		<link rel="shortcut icon" href="assets/fclogo.png"/>
+		
+	</head>
+	
+	<body>
+
+        <nav> 
+			<div class="navigation">
+                <div class="logo">
+                    <img src="assets/fclogo.png">
+                    <h1>E-</h1>
+                    <h1>Shopping</h1>
+                </div>
+                
+                <div class="lists">
+                     <ul>
+                         <li>
+                             Welcome Admin
+                         </li>
+                         <li>
+                            <a href="logindelivery.html">Logout</a>
+                         </li>
+                     </ul>
+                    
+                </div>
+                
+            </div>
+			</nav>
+        <input type="checkbox" id="nav-toggle">
+		<div class="sidebar">
+            <div class="sidebar-label">
+                <h2><span class="las la-bars"></span><span>Menu</span></h2>
+
+            </div>
+
+            <div class="sidebar-menu">
+                 <ul>
+                <li>
+                    <a href="dashboard.html" ><span class="las la-desktop"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="AdProcessO.html" ><span class="las la-box"></span><span>Process Orders</span></a>
+                </li>
+                <li>
+                    <a href="AdDelC.html"><span class="las la-truck"></span><span>Delivered Orders</span></a>
+                </li>
+                <li>
+                    <a href="productmaster.html" class="active"><span class="las la-shopping-bag"></span><span>Product Master</span></a>
+                </li>
+                <li>
+                    <a href="CategorieMaster.html"><span class="las la-poll-h"></span><span>Category Master</span></a>
+                </li>
+                <li>
+                    <a href="Employeeaccounts.html"><span class="las la-users"></span><span>Employee Account</span></a>
+                </li>
+                <li>
+                    <a href="customeraccount.html"><span class="las la-user"></span><span>Customer Account</span></a>
+                </li>
+    
+            </ul>
+            </div>
+           
+        </div>
+        <div class="main-content">
+            <header class="titlepage">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-shopping-bag"></span>
+                    </label>
+                    Product Master
+                </h2>
+             </header>
+        <main>
+            <!---------------START OF INPUT DATA--------------------------->
+
+            <div class="input-wrapper">
+                <div class="input">
+                    <label for="proID">Product ID</label>
+                    <input type="text" name="Productid" id="pID" required>
+                    <label for="catID">Category ID</label>
+                    <input type="text" name="Categoryid" id="cID" required>
+                </div>
+            <div class="input">
+                <label for="proName">Product Name</label>
+                <input type="text" name="Productname" id="pName" required>
+            </div>
+                <div class="input">
+                    <label for="proDetails">Product Details</label>
+                    <input type="text" name="Productdetails" id="pDetails" required>
+               
+                    <button class="button">Clear</button>
+                </div>
+                <div class="input">
+                    <label for="proPrice">Product Price</label>
+                    <input type="number" name="Productprice" id="pPrice" min="1" required>
+
+                    <label for="stck">Stock</label>
+                    <input type="number" name="Stock" id="stock" min="1" required>
+                </div>
+        </div>
+            <!------------------------END OF INPUT DATA-------------------->
+
+                                    
+    <div class="table-wrapper">
+        <!------------------------START OF TABLE DATA--------------------------->
+            <table class="table table-striped table-hover">
+                <div class="table-title">
+                    <div class="row">
+                        <p class="header"><b>No.</b></p>
+                        <p class="header1"><b>Product ID</b></p>
+                        <p class="header2"><b>Category ID</b></p>
+                        <p class="header3"><b>Product Name</b></p>
+                        <p class="header4"><b>Details</b></p>
+                        <p class="header5"><b>Price</b></p>
+                        <p class="header6"><b>Stock</b></p>
+                    </div>
+                </div>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>P001</td>
+                        <td>C005</td>
+                        <td>Chew Toy</td>
+                        <td>Cotton</td>
+                        <td>65</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>P002</td>
+                        <td>C001</td>
+                        <td>Nail Clipper</td>
+                        <td>Metal</td>
+                        <td>50</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>P003</td>
+                        <td>C003</td>
+                        <td>Dog Food-Beef</td>
+                        <td>Beef No Preservatives</td>
+                        <td>45</td>
+                        <td>9</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <!------------------------END OF TABLE DATA--------------------------->
+
+            <!--------START OF ENTRIES LINE------------------------->
+
+            <div class="entries">
+                <p>Showing 1 to 9 of 9 entries</p>
+            </div>
+            <!--------END OF ENTRIES LINE------------------------->
+
+             <!------------------------START OF PAGINATION--------------------------->
+
+        <div class="page-container">
+            <ul class="pagination">
+                <li class="start-end"><a href="#">Previous</a></li>
+                <li><a href="#">1</a></li>
+                <li class="start-end"><a href="#">Next</a></li>
+            </ul>
+        </div>
+        <!------------------------END PAGINATION--------------------------->
+       
+        <!------------------------START OF BUTTON GROUP--------------------------->
+
+        <div class="button-wrapper">
+            <div class="button1">
+                <button class="button"><a href=productmaster.html>Add</a></button>
+            </div>
+            <div class="button1">
+                <button class="button"><a href=productmaster.html>Edit</a></button>
+            </div>
+            <div class="button1">
+                <button class="button"><a href=productmaster.html>Update</a></button>
+            </div>
+            <div class="button1">
+                <button class="button"><a href=productmaster.html>Delete</a></button>
+            </div>
+        </div>
+        <!-----------------------END OF BUTTON GROUP--------------------------->
+    </div>
+        </main>
+         
+        
+    </div>
+    </body>
+	
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta character="UTF-8">
+		<meta name = "viewport" content ="width=device-width, initial-scale=1">
+		<title>
+				Furballs Corner Login
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		<script type="text/javascript">
+		function welcome() {
+			var input_text = document.getElementById("us");
+			var input_text = document.getElementById("ps");
+			if (input_text.value ==" "){
+			alert("Please make sure you have filled the required blanks.");
+			return false;
+			}
+			alert("Welcome");
+			return true;
+			
+			}
+		</script>
+		 <!--logo-->
+		 <link rel="shortcut icon" href="assets/fclogo.png"/>
+	</head>
+	<body>
+	
+	    
+		<div class="title">
+			<div class="logo">
+			<img src="assets/fclogo.png" alt="frblls-corner_logo" class="imlogo">
+			</div>
+			<div class="firstname">
+			<h1></h1>
+			<h6>E-Shopping</h6>
+			</div>
+			
+		<div class="wrapper">
+		<div class="registration-page">
+			
+			<form action="action_page.php" onsubmit="welcome()">
+				<fieldset class="field">
+				<div class="form-wrap">
+						
+							<div class="input1">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required> 
+							</div>
+							<br>
+							
+							<div class="input1">
+								<label for="password">Password</label>
+								<input type="password" name="pass" id="password"> 
+							</div>
+				</div>
+				</fieldset><br>
+					<div class="remember">
+						<input type="checkbox" name="rem" value="IsRememberme">
+						<label for="rememberMe">Remember me</label>
+					 </div><br>
+					
+			</form>
+			<div class="submit-btn">
+						<a href="homepage.html"><input type="submit" name="" value="Login"></a>
+						&nbsp&nbsp&nbsp&nbsp
+						<a href="Register.html"><input type="submit" name="" value="Register"></a>
+					</div><br>
+					<div class="separator">
+						<span class="vl-innertext">or</span>
+					</div><br>
+					<div class="smconnect">
+						<p>connect with</p>
+					</div><br><br><br>
+					<div class="social-widget">
+						<a href="">
+							<ul class="social-button facebook">
+								<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+								<li class="social-text">Facebook</li>
+							</ul>
+						</a>
+						<a href="">
+							<ul class="social-button google">
+								<li><i class="fa fa-google" aria-hidden="true"></i></li>
+								<li class="social-text">Google</li>
+							</ul>
+						</a>
+					</div>
+				</div>
+		</div>
+		</div>  
+			
+		
+	
+	
+	</body>
+</html>

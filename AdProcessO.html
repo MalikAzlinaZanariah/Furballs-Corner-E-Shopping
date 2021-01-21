@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta character="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link type="text/css" rel="stylesheet" href="css/adminstyle.css">
+		<title>
+				Furballs Corner Admin
+		</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        
+		<link rel="shortcut icon" href="assets/fclogo.png"/>
+		
+	</head>
+	
+	<body>
+
+        <nav> 
+			<div class="navigation">
+                <div class="logo">
+                    <img src="assets/fclogo.png">
+                    <h1>E-</h1>
+                    <h1>Shopping</h1>
+                </div>
+                
+                <div class="lists">
+                     <ul>
+                         <li>
+                             Welcome Admin
+                         </li>
+                         <li>
+                            <a href="logindelivery.html">Logout</a>
+                         </li>
+                     </ul>
+                    
+                </div>
+                
+            </div>
+			</nav>
+        <input type="checkbox" id="nav-toggle">
+		<div class="sidebar">
+            <div class="sidebar-label">
+                <h2><span class="las la-bars"></span><span>Menu</span></h2>
+
+            </div>
+
+            <div class="sidebar-menu">
+                 <ul>
+                <li>
+                    <a href="dashboard.html" ><span class="las la-desktop"></span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="AdProcessO.html" class="active"><span class="las la-box"></span><span>Process Orders</span></a>
+                </li>
+                <li>
+                    <a href="AdDelC.html"><span class="las la-truck"></span><span>Delivered Orders</span></a>
+                </li>
+                <li>
+                    <a href="productmaster.html" ><span class="las la-shopping-bag"></span><span>Product Master</span></a>
+                </li>
+                <li>
+                    <a href="CategorieMaster.html" ><span class="las la-poll-h"></span><span>Category Master</span></a>
+                </li>
+                <li>
+                    <a href="Employeeaccounts.html"><span class="las la-users"></span><span>Employee Account</span></a>
+                </li>
+                <li>
+                    <a href="customeraccount.html"><span class="las la-user"></span><span>Customer Account</span></a>
+                </li>
+    
+            </ul>
+            </div>
+           
+        </div>
+        <div class="main-content">
+            <header class="titlepage">
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-box"></span>
+                    </label>
+                    Process Order
+                </h2>
+             </header>
+        <main>
+            <div class="Adtable-wrapper">
+                <!------------------------TABLE DATA--------------------------->
+                    <table class="table Adtable-striped Adtable-hover">
+                        <div class="Adtable-title">
+                            <div class="Adrow">
+                                <p class="Adheader"><b>No.</b></p>
+                                <p class="Adheader1"><b>Order ID</b></p>
+                                <p class="Adheader2"><b> Name</b></p>
+                                <p class="Adheader3"><b> Address</b></p>
+                                <p class="Adheader4"><b> Date</b></p>
+                                <p class="Adheader6"><b> Delivery Emp</b></p>
+                                <p class="Adheader7"><b> Status</b></p>
+                                
+                            </div>
+                        </div>
+        
+                        <tbody class="addetail">
+                            <tr>
+                                <td>1</td>
+                                <td><li class="or">OD0020</li>
+                                    <li class="view">View detail</li></td>
+                                <td>Weab Rina</td>
+                                <td>Normal Rd. Baliwasan</td>
+                                <td>Jan 23, 2021</td>
+                                <td><form>
+                                    <select name="emp">
+                                        <option value="select">select:</option>
+                                        <option value="emp001">emp001</option>
+                                        <option value="emp002">emp002</option>
+                                        <option value="emp003">emp003</option>
+                                        <option value="emp004">emp004</option>
+
+                                    </select>
+
+                                </form>
+
+                                </td>
+                                <td>Pending</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><li class="or">OD0012</li>
+                                    <li class="view">View detail</li></td>
+                                <td>Marvic Hey</td>
+                                <td>Southcom</td>
+                                <td>Jan 20, 2021</td>
+                                <td><form>
+                                    <select name="emp">
+                                        <option value="select">select:</option>
+                                        <option value="emp001" selected>emp001</option>
+                                        <option value="emp002">emp002</option>
+                                        <option value="emp003">emp003</option>
+                                        <option value="emp004">emp004</option>
+
+                                    </select>
+
+                                </form>
+
+                                </td>
+                                <td>On going</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><li class="or">OD0017</li>
+                                    <li class="view">View detail</li></td>
+                                <td>Maiya Hee</td>
+                                <td>Southcom</td>
+                                <td>Jan 22, 2021</td>
+                                <td><form>
+                                    <select name="emp">
+                                        <option value="select">select:</option>
+                                        <option value="emp001" >emp001</option>
+                                        <option value="emp002">emp002</option>
+                                        <option value="emp003"selected>emp003</option>
+                                        <option value="emp004">emp004</option>
+
+                                    </select>
+
+                                </form>
+
+                                </td>
+                                <td>On going</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><li class="or">OD0013</li>
+                                    <li class="view">View detail</li></td>
+                                <td>Pedro Penduco</td>
+                                <td>Boalan</td>
+                                <td>Jan 21, 2021</td>
+                                <td><form>
+                                    <select name="emp">
+                                        <option value="select">select:</option>
+                                        <option value="emp001" selected>emp001</option>
+                                        <option value="emp002">emp002</option>
+                                        <option value="emp003">emp003</option>
+                                        <option value="emp004">emp004</option>
+
+                                    </select>
+
+                                </form>
+
+                                </td>
+                                <td>On going</td>
+                            </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                      <!--------START OF ENTRIES LINE------------------------->
+
+            <div class="entries">
+                <p>Showing 1 to 4 of 4 entries</p>
+            </div>
+            <!--------END OF ENTRIES LINE------------------------->
+
+             <!------------------------START OF PAGINATION--------------------------->
+
+        <div class="page-container">
+            <ul class="pagination">
+                <li class="start-end"><a href="#">Previous</a></li>
+                <li><a href="#">1</a></li>
+                <li class="start-end"><a href="#">Next</a></li>
+            </ul>
+        </div>
+        <!------------------------END PAGINATION--------------------------->
+       
+                    <!------------------------END OF TABLE DATA--------------------------->
+</div>
+        </main>
+         
+        
+	</div>
+	</body>
+</html>
